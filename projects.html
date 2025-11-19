@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Anthony Willis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Shared header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="dot"></span>
+        <span class="brand-text">Anthony Willis</span>
+      </a>
+      <nav class="main-nav">
+        <ul class="navlist">
+          <li><a class="pill" href="index.html">Home</a></li>
+          <li><a class="pill active" href="projects.html">Projects</a></li>
+          <li><a class="pill" href="about.html">About</a></li>
+
+          <!-- FIXED RESUME LINK -->
+          <li><a class="pill" href="Copy of Resume.pdf" target="_blank">Resume</a></li>
+
+          <li><a class="pill" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="spacer"></div>
+    </div>
+  </header>
+
+  <!-- ====== MAIN CONTENT ====== -->
+  <main class="projects-shell">
+    <header class="projects-heading">
+      <h1>Projects Page</h1>
+      <p class="projects-sub">
+        Small image boxes with short write-ups on redlining, architecture, and urban planning.
+      </p>
+    </header>
+
+    <!-- Responsive Thumbnail Grid -->
+    <section class="thumb-grid">
+      <!-- 1 -->
+      <article class="thumb-card">
+        <div class="thumb-pic">
+          <img src="images/sunset-street.jpg" alt="Sunset main street" />
+        </div>
+        <h3 class="thumb-title">Redlining & Main Streets</h3>
+        <p class="thumb-desc">
+          Historic mortgage “security” grades steered capital away from certain corridors.
+          You can still read those choices in lighting, storefront turnover, and street trees.
+        </p>
+      </article>
+
+      <!-- 2 -->
+      <article class="thumb-card">
+        <div class="thumb-pic">
+          <img src="images/mountain-town.jpg" alt="Mountain town street" />
+        </div>
+        <h3 class="thumb-title">Urban Form & Topography</h3>
+        <p class="thumb-desc">
+          Architecture meets terrain: blocks bend with valleys and views.
+          Planning decisions follow the land—access, slope, and exposure.
+        </p>
+      </article>
+
+      <!-- 3 -->
+      <article class="thumb-card">
+        <div class="thumb-pic">
+          <img src="images/project-arch.png" alt="Architectural wireframe" />
+        </div>
+        <h3 class="thumb-title">Architecture Study</h3>
+        <p class="thumb-desc">
+          Clean linework and grids echo drafting conventions.
+          Sections and setbacks control sunlight, privacy, and rhythm at the block scale.
+        </p>
+      </article>
+
+      <!-- 4 -->
+      <article class="thumb-card">
+        <div class="thumb-pic">
+          <img src="images/project-philly-map.jpg" alt="Historic HOLC map" />
+        </div>
+        <h3 class="thumb-title">HOLC Map Analysis</h3>
+        <p class="thumb-desc">
+          Comparing redlined areas to today’s heat, health, and wealth indicators
+          shows how policy lines became long-term environmental and economic outcomes.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Anthony Willis · Web Page Design</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

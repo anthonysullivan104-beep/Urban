@@ -1,0 +1,280 @@
+/* ====== GENERAL RESET ====== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #2a3854;
+  background-color: #f7f9fc;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #112b44;
+  margin-bottom: 0.5em;
+}
+
+/* ====== HEADER & NAVBAR ====== */
+.site-header {
+  background: #fff;
+  border-bottom: 2px solid #e0e4ec;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #112b44;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.brand .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e63946;
+  margin-right: 8px;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  padding: 0;
+}
+
+.navlist .pill {
+  text-decoration: none;
+  color: #112b44;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.navlist .pill:hover,
+.navlist .active {
+  background: #e8eef9;
+  border: 1px solid #c4d2e7;
+}
+
+/* ====== MAIN CARD ====== */
+.card {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e6f0;
+  border-left: 4px solid #e63946;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for subtle polish */
+.card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #5c6878;
+  margin-bottom: 1rem;
+}
+
+/* ====== ABOUT PAGE GRID ====== */
+.container.about {
+  display: grid;
+  grid-template-columns: minmax(250px, 400px) 1fr;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-caption {
+  font-size: 0.85rem;
+  color: #606c7c;
+  margin-top: 8px;
+}
+
+.about-copy p {
+  margin-bottom: 1rem;
+}
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.about-facts .label {
+  font-weight: 600;
+  color: #112b44;
+}
+
+.about-callout {
+  grid-column: 1 / -1;
+  background: #f9fcff;
+  border-left: 4px solid #e63946;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* ====== CONTACT PAGE BANNER ====== */
+.contact-card {
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.contact-banner {
+  width: 100%;
+  height: 180px;
+  background-image: url("blue city.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+/* ====== PROJECTS PAGE ====== */
+.projects-shell {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.projects-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-sub {
+  color: #5c6878;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0.5rem auto;
+}
+
+.thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.thumb-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumb-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.thumb-pic img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.thumb-title {
+  color: #112b44;
+  margin-bottom: 0.5rem;
+}
+
+.thumb-desc {
+  color: #5a5f6a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #5a5f6a;
+  font-size: 0.9rem;
+  background: #f1f5fb;
+  border-top: 1px solid #e3e7ef;
+}
+
+/* ====== ABOUT PAGE RESPONSIVE GRID ====== */
+@media (max-width: 800px) {
+  .container.about {
+    grid-template-columns: 1fr;
+  }
+  .about-facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====== RESPONSIVE NAVBAR ====== */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .navlist {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0;
+  }
+
+  .navlist li + li {
+    margin-top: 0.25rem;
+  }
+
+  .navlist .pill {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #c4d2e7;
+  }
+
+  .navlist .pill:hover,
+  .navlist .active {
+    background: #e8eef9;
+  }
+}

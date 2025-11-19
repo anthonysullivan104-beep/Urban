@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Anthony Willis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="dot"></span>
+        <span class="brand-text">Anthony Willis</span>
+      </a>
+      <nav class="main-nav">
+        <ul class="navlist">
+          <li><a class="pill" href="index.html">Home</a></li>
+          <li><a class="pill" href="projects.html">Projects</a></li>
+          <li><a class="pill active" href="about.html">About</a></li>
+          <li><a class="pill" href="resume.html">Resume</a></li>
+          <li><a class="pill" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="spacer"></div>
+    </div>
+  </header>
+
+  <main class="container about">
+    <figure class="about-media">
+      <img src="images/about-anthony.jpg" alt="Anthony Willis running Cross Country for SUNY New Paltz" class="about-photo" />
+      <figcaption class="about-caption">
+        Racing for SUNY New Paltz — distance running taught me pacing, patience, and how small choices build momentum.
+      </figcaption>
+    </figure>
+
+    <article class="about-copy">
+      <h1>About Anthony Willis</h1>
+      <p>
+        I’m a <strong>Geography major</strong> concentrating in <strong>Urban Planning</strong> at 
+        <em>SUNY New Paltz</em>, and I run <strong>Cross Country</strong> for the Hawks. 
+        On the course, I think in splits: plan the first mile, surge in the middle, and finish strong. 
+        I approach cities the same way — build a good base, invest steadily, and make smart moves that 
+        improve communities over time.
+      </p>
+
+      <p>
+        My work explores how city layouts influence <strong>access</strong> to education, parks, transportation, 
+        and opportunity. I study <strong>redlining</strong>, the historical practice of denying mortgages 
+        and loans based on neighborhood demographics. Although these maps were drawn decades ago, their 
+        effects persist — influencing property values, pollution exposure, and even average life expectancy.
+      </p>
+
+      <p>
+        Urban planning matters because it determines <em>who gets access</em> — to housing, mobility, and 
+        environmental safety. My goal is to use mapping, design, and data to <strong>repair past inequities</strong> 
+        and promote more sustainable, equitable communities.
+      </p>
+
+      <div class="about-facts">
+        <div><span class="label">School:</span> SUNY New Paltz</div>
+        <div><span class="label">Major:</span> Geography (Urban Planning)</div>
+        <div><span class="label">Team:</span> Cross Country</div>
+        <div><span class="label">Interests:</span> Transportation equity, climate adaptation, redlining research</div>
+      </div>
+    </article>
+
+    <aside class="about-callout">
+      <p><strong>Why this site?</strong> 
+      It visualizes how historical redlining still affects modern city planning — blending architecture, data, and design.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Anthony Willis · Web Page Design</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
